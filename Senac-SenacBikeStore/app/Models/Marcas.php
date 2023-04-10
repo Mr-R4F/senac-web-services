@@ -18,4 +18,7 @@ class Marcas extends Model
     public $timestamps = false;
     public $incrementing = true;
     //dattabase firt (criado primeiro)
+    public function produto() {
+        $this->hasMany(Produto::class, 'fkmarca');
+    }
 }
