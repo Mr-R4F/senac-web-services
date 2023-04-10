@@ -1,0 +1,39 @@
+apis
+websevices
+
+evolução do desenvolvimento e deplyment
+
+modelo em cascata
+ágil
+
+dev em 3 camadas
+modelos anteriores inviáveis hoje
+bolha.com
+dados
+
+API -> fornece (url por exemp_)  / consome
+webservices pequena parte da api
+rest subtipo api
+chimera
+
+visão macro
+onde, como, o que entrega
+usar boas interfaces na construção de apis
+constroi algo para alguem entender
+conj de padroes e infos protocolo
+proprietárias
+
+micro  serviços
+localization
+
+guzzle http - bilbioteca para web services
+chamando web services públicas com laravel
+
+api (feita em laravel que retorna em json informações
+
+restapi (no geral ao consumir retorna itens
+
+6³£¬¢³²£3GFSDMGDSL
+
+definição
+
