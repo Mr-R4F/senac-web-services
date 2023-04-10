@@ -10,3 +10,4 @@ php artisan make:controller Api\CategoriaController --model=Categoria
 cria um controler a partir da tabela automaticamente todas as tabelas são CRUD
 viu métdo pro métod e associou
 request -> faz validação insere recurso
+php artisan make:request StoreCategoriaRequest

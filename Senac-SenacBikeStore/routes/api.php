@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\api\CategoriaController;
+use App\Http\Controllers\api\MarcaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ use Illuminate\Support\Facades\Route;
 });
  */
 Route::apiResource('categorias', CategoriaController::class); //Lê a controle e ve se tem os métodos as vincula com os verbos HTTP
+Route::apiResource('marcas', MarcaController::class); //Lê a controle e ve se tem os métodos as vincula com os verbos HTTP
