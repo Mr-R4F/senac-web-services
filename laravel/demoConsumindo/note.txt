@@ -1,3 +1,7 @@
+
+
+
+
 apis
 websevices
 
@@ -23,6 +27,7 @@ constroi algo para alguem entender
 conj de padroes e infos protocolo
 proprietárias
 
+
 micro  serviços
 localization
 
@@ -36,4 +41,69 @@ restapi (no geral ao consumir retorna itens
 6³£¬¢³²£3GFSDMGDSL
 
 definição
+
+protocolo HTTP (transferencia de dados)
+
+reutilização de código na webservices (apis pela web)
+integração entre sistemas
+responsabilidades compartilhadas
+
+request e response
+cliente e servidor (algúem pede, algúem entrega )
+TCP - UDP
+CABEÇALHO E CONTEÚDO (DEV E USUÁRIO VE RESPECTIVAMENTE)
+IMPORTÂNTE O CONTEÚDODADO QUE O USUÁRIO RECEBE E O DESENVOLVEDOR
+
+PARELELIZA O DONWOLOAD
+
+cdns )faz carga em paralelo
+serviço de cloud (entrega de conteudo)
+reduz latencia
+pois ao inves de buscar no servidor lá longe busca em um local mais proximo
+
+rede global de conteudo (servidor mais prximo)
+reduz latencia
+
+ao entregar o conteudo pode-se buscar de outras fontes
+XML -> SOAP
+SGML
+
+2000 : XML :EDI
+XML (repetitivo)
+everborático + pesad (dá problemas em tremos de esportação
+
+JSON
+COMO SÓ SERVE PARA JS SURGIRAM BIBLIOTECA EM OTURAS LINGUANGES PARA SEU USUÁRIO
+PODE-SE RETORNAR O QUE QUISER A DEPENDER (XML JSON ETC ...
+IMPORANTE SABER O FORMATO PARA QUE O 'OUTRO' LADO SAIBA TBM O FORMATO)
+documento - cabeçalho, requisição response
+info de cabeçalho é interessante para os servidores
+
+esvrever código com base nos verbos
+cliente (verbos...)
+servidor processa e retorna erros
+tratar os erros de não encontrados (caso contrário dá erro)
+headers tudo auilo do cliente para o serve
+token vai ser acessádo pelo header
+urls amigáveis
+
+ou arquiteturas baseada em rest
+tentativas de contruir urls que sejam legiveis e inteligentes para o ser humano
+
+fazer manipulação de dados concebidos
+para 'classificação' vira parametro de quertyys (passando sinais (+ - )
+body passa recursos para a APIs
+cURL - > requisições via prompt
+comum para testes
+deixar bem documentado
+
+PROTOCOLO -> OSI -> INTERNET -> CAMADAS -> UDP E TCP
+udp - > streaming
+tcp
+OSI -> HTTP (se tornou o padrão) -> RECURSO/VERBO/RESPONSE
+RECURSO -> URL + COMANDO ADICIONAL - > header (ESCONDIDO) / body (VISIVEL / html / evoluio com o XML)
+aplicação está ok , mas o banco não está acessível
+
+usuario dev -> teste -postman -> curl -> pomrpt ->automatização testes -> teste unitário
+
 
