@@ -1,7 +1,3 @@
-
-
-
-
 apis
 websevices
 
@@ -26,21 +22,6 @@ usar boas interfaces na construção de apis
 constroi algo para alguem entender
 conj de padroes e infos protocolo
 proprietárias
-
-
-micro  serviços
-localization
-
-guzzle http - bilbioteca para web services
-chamando web services públicas com laravel
-
-api (feita em laravel que retorna em json informações
-
-restapi (no geral ao consumir retorna itens
-
-6³£¬¢³²£3GFSDMGDSL
-
-definição
 
 protocolo HTTP (transferencia de dados)
 
@@ -93,6 +74,8 @@ tentativas de contruir urls que sejam legiveis e inteligentes para o ser humano
 fazer manipulação de dados concebidos
 para 'classificação' vira parametro de quertyys (passando sinais (+ - )
 body passa recursos para a APIs
+
+per
 cURL - > requisições via prompt
 comum para testes
 deixar bem documentado
@@ -106,4 +89,61 @@ aplicação está ok , mas o banco não está acessível
 
 usuario dev -> teste -postman -> curl -> pomrpt ->automatização testes -> teste unitário
 
+====
+midjoruney
 
+Design de web service
+baseado em design no ponto de vista do webservices
+resolve boa parte dos problemas
+jeito de escrever historia
+realiades paralelas
+padrão jornada do heroi
+
+perspectiva devs x devs
+construi algo para outro dev (pensar como outro dev)
+elementos necessários para o developer (quanto mais ferramentas fornecer melhor) -> usuário final do desenvolvimento
+nos tornamos fornecedor do recurso
+Fornecedor / consumidor
+relação de requisição (como vai ser chamada do webservice) -> como vai ser respondido (request)
+aquele webservices /como será respondido os resultados que será devolvido dele)(response)
+Formato / protocolo em que os dados vem (como e vai formatar / qual documento)-json , xml ...
+
+como formata / responde / formata
+
+Modelos de implementar a relação -> SOAP/SOA -> xml & REST (ful) -> json - > mais conhecidos
+foco + no REST pois seu usa mais no mercado, mas pode acontencer de usar SOAP
+
+e para implementar mais ainda a perspectiva surge a influencia no design -> influencia dos dados
+código
+arquitetura
+organizacionais/culturais
+
+influencias que ocorrem na maneira de desenhar os webservices
+orquestração (pega dados de um de outro)...
+acosntrução influência
+REST -> representational state transfer
+-> 2000 -> fielding (1965)
+-> cofundador -> apache
+rfc -> maneira de implementar -> uri
+desenvolve estilo arquitetonico (rest par estar de acordo com o uue  a internet propoe)
+info explicita
+propôs maneira de representar isso de forma mais amigável para o consumidor (dev
+trabalhar como URI de forma uniform (padronizada)
+staless (sem estados) não estabelece uma comunicação continua
+cacheable (salva os dados)
+layers (camadas)
+code-on-demand (só é executada como a página faz o pedido)
+consiga passar as infos baseado nisso
+
+modelagem de maturidade de leornad richers
+responsabilidades devem ser diretas
+hyperlinks para outros conteudos do webservices
+recursos -> sua ideia é o uqe o consumidor terá ao chamar o recurso
+combinações
+operações atividades que o webservice implementa
+formatos de midia - forma de retorno
+especificar o content-type a depender
+tipo de respostas
+operadores (- / + BOA PRÁTICA)
+DEPENDER
+todo contesto direciona a modelagem
