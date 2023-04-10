@@ -1,0 +1,43 @@
+DDL -> criar dados
+DML  manipulas
+transforma de POO em procedural (ORM. tradutor -> mapeamento de objeto relacional)
+
+active record (ele sabe qual registro está apontando) - consegue fazer essa tradução
+faz trdução de relacional para POO
+no eloquent vira atividade
+faz mapea entre linguagens
+pode-se considerar como um middleware
+driver 'fala' com o BD
+code first para banco novo
+
+web services
+http
+modelagem
+mvc
+
+chega-se nos webservices rest
+laravel melhor tecnologia para modelagem de web services
+
+tipo de pensamento que se estuda cde como uma aplicação vai funcionar
+modela-se uma estrutua mental
+organizar a estrturaas
+implementação  padões para facilitar no desenvolvimento  deixa-lo mais produtivo
+dividos em papeis e repnsabilidades
+pastas a serem manipulados no futuro
+CONTROLLER IDENTIFICA ENTIDADE QUE IDENTIFICA OPERAÇÕES
+controller faz a cola
+view mostra
+route permite mapeamento dos recursos e verbox 
+
+interpretada
+liga view - model
+
+usuario faz requisição
+router tratar (recebe demanda e olha onde deve redirecionar a chamada)
+basicamente modificaçõesc
+em web services
+chama url em vez da página (requests)
+e roteador tratar
+identifica função que trata
+controller faz as modificações
+
