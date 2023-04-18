@@ -68,7 +68,7 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-
+   
     'timezone' => 'UTC',
 
     /*
@@ -81,8 +81,8 @@ return [
     | to any of the locales which will be supported by the application.
     |
     */
-
-    'locale' => 'en',
+ //mudar aqui
+    'locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -94,8 +94,8 @@ return [
     | the language folders that are provided through your application.
     |
     */
-
-    'fallback_locale' => 'en',
+ //mudar aqui
+    'fallback_locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
@@ -194,7 +194,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Laravel\Passport\PassportServiceProvider::class,
     ],
 
     /*

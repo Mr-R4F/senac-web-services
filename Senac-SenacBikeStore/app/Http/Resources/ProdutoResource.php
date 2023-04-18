@@ -19,7 +19,16 @@ class ProdutoResource extends JsonResource
             'id' => $this->pkproduto,
             'nome_do_produto' => $this->nomedoproduto,
             'ano_do_modelo' => $this->anodomodelo,
-            'preco_da_lista' => $this->precodalista
+            'preco_da_lista' => $this->precodalista,
+            'moeda' => 'USD',
+            'categoria' => [
+                'id' => $this->pkcategoria,
+                'nome_da_categoria' => $this->nomedacategoria
+            ],
+            'marca' => [
+                'id' => $this->pkmarca,
+                'nome_da_categoria' => $this->nomedamarca
+            ]
         ];
     }
 }

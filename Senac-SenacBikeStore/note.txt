@@ -11,3 +11,42 @@ cria um controler a partir da tabela automaticamente todas as tabelas são CRUD
 viu métdo pro métod e associou
 request -> faz validação insere recurso
 php artisan make:request StoreCategoriaRequest
+
+localization
+adequação a determinado local
+adaptção a determinado local (adaptar uma serie de comportamento)
+idima saxonico
+olhar o padrão que cada país usa
+hrs atrá do UTC
+O ÚLTIMO é muito usado por APIs
+biblioteca de recusros ao inves de escrever no códigos as mensaagens
+escreve-se na bilbioteca assim faz-se a tradução naquele recurso e não no código
+adequar o software para determinado
+arabes da esquerda  para a diretira
+hit mapping (Z)
+laravel fornece recurso para location
+recursos -> 'repositorio' de mensagens
+__('') //dentro do arquivo categoria busca a string return
+
+middlware antes de ser processado pelo controler insere código
+
+modificou o kernel para que o accept langagua seja a string de passagem de idioma
+__ para localizaçõ é uma boa prática
+
+user -> passa pelo middlware -> busca no arquivo através da função -> controller _> mostra
+
+boa prática 'accept-language'
+
+toda função a ser executada antes do código principal (middlware)
+
+segurança aspectos de como implementa segurança
+autenticação a verdadeira pessoa para acessar tabela
+boa pratica token
+token -> carregado para ser 
+autorização - estabelecer privilegios no web services
+autenticação - executar a entrada de um usuário valido
+atualmente mas usa-se https
+passport token do laravel
+para web services o mais usado é o passport
+compilar e script
+auth:api se tiver token
