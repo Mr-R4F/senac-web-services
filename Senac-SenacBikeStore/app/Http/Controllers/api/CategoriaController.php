@@ -15,6 +15,20 @@ use Illuminate\Validation\ValidationException;
 class CategoriaController extends Controller
 {
     /**
+     *  @OA\Get(
+     *      path="/api/categorias",
+     *      operationId="getCategoriasList",
+     *      tags={"Categorias"},
+     *      summary="Retorna a lista de Categorias",
+     *      description="Retona o JSON da lista de Categorias",
+     *      @OA\Response(
+     *          response=200,
+     *          description="Operação executada com sucesso"
+     *      )
+     *  )
+     */
+
+    /**
      * Display a listing of the resource.
      */
     public function index(Request $request) //ORDERNAÇÃO
@@ -41,6 +55,25 @@ class CategoriaController extends Controller
     }
 
     /**
+     *  @OA\Post(
+     *      path="/api/categorias",
+     *      operationId="storeCategoria",
+     *      tags={"Categorias"},
+     *      summary="Cria uma nova Categoria",
+     *      description="Retona o JSON com os dados da nova Categoria",
+     *      @OA\RequestBody(
+     *          required=true,
+     *          @OA\JsonContent(ref="#/components/schemas/StoreCategoriaRequest")
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Retona o JSON com os dados da nova Categoria",
+     *          @OA\JsonContent(ref="#/components/schemas/Categoria")
+     *      ),
+     *  )
+     */
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(StoreCategoriaRequest $request) //pega requisição
@@ -54,6 +87,29 @@ class CategoriaController extends Controller
             'Categoria' => new CategoriaResource($categoria) //formata a saída
         ], 200);
     }
+
+    /**
+     *  @OA\Get(
+     *      path="/api/categorias/{id}",
+     *      operationId="getCategoriaById",
+     *      tags={"Categorias"},
+     *      summary="Retorna a informação de uma categoria",
+     *      description="Retona o JSON da Categoria requisitada",
+     *      @OA\Parameter(
+     *          name="id",
+     *          description="Id da Categoria",
+     *          required=true,
+     *          in="path",
+     *          @OA\Schema(
+     *              type="integer"
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Operação executada com sucesso",
+     *      ),
+     *  )
+     */
 
     /**
      * Display the specified resource.
@@ -130,6 +186,33 @@ class CategoriaController extends Controller
     }
 
     /**
+     *  @OA\Patch(
+     *      path="/api/categorias/{id}",
+     *      operationId="updateCategoria",
+     *      tags={"Categorias"},
+     *      summary="Atualiza uma Categoria existente",
+     *      description="Retona o JSON da Categoria atualizada",
+     *      @OA\Parameter(
+     *          name="id",
+     *          description="Id da Categoria",
+     *          required=true,
+     *          in="path",
+     *          @OA\Schema(
+     *              type="integer"
+     *          )
+     *      ),
+     *      @OA\RequestBody(
+     *         required=true,
+     *         @OA\JsonContent(ref="#/components/schemas/StoreCategoriaRequest")
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Operação executada com sucesso",
+     *      ),
+     *  )
+     */
+
+    /**
      * Update the specified resource in storage.
      */
     public function update(StoreCategoriaRequest  $request, Categoria $categoria) //recebe o mesmo dado mesma regras pra o update
@@ -143,6 +226,30 @@ class CategoriaController extends Controller
             'Mensagem' => 'Categoria atualizada',
         ], 200);
     }
+
+    /**
+     *  @OA\Delete(
+     *      path="/api/categorias/{id}",
+     *      operationId="deleteCategoria",
+     *      tags={"Categorias"},
+     *      summary="Apaga uma Categoria existente",
+     *      description="Apaga uma Categoria existente e não há retorno de dados",
+     *      @OA\Parameter(
+     *          name="id",
+     *          description="Id da Categoria",
+     *          required=true,
+     *          in="path",
+     *          @OA\Schema(
+     *              type="integer"
+     *          )
+     *      ),
+     *      @OA\Response(
+     *          response=200,
+     *          description="Operação executada com sucesso",
+     *          @OA\jsonContent()
+     *      ),
+     *  )
+     */
 
     /**
      * Remove the specified resource from storage.
