@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ProdutoResource;
-use App\Http\Requests\StoreProdutoRequest;
-use App\Http\Resources\CategoriaResource;
+use App\Http\Resources\v1\ProdutoResource;
+use App\Http\Requests\v1\StoreProdutoRequest;
 use App\Models\Produto;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
+
 use Illuminate\Support\Str;
-use Illuminate\Validation\ValidationException;
+
 
 class ProdutoController extends Controller
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\api\v1;
 
-use App\Http\Resources\CategoriaResource;
+use App\Http\Resources\v1\CategoriaResource;
+use App\Http\Requests\v1\StoreCategoriaRequest;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreCategoriaRequest;
 use App\Models\Categoria;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -26,10 +26,6 @@ class CategoriaController extends Controller
      *          description="Operação executada com sucesso"
      *      )
      *  )
-     */
-
-    /**
-     * Display a listing of the resource.
      */
     public function index(Request $request) //ORDERNAÇÃO
     {
@@ -67,14 +63,10 @@ class CategoriaController extends Controller
      *      ),
      *      @OA\Response(
      *          response=200,
-     *          description="Retona o JSON com os dados da nova Categoria",
+     *          description="Operação executada com sucesso",
      *          @OA\JsonContent(ref="#/components/schemas/Categoria")
-     *      ),
+     *      )
      *  )
-     */
-
-    /**
-     * Store a newly created resource in storage.
      */
     public function store(StoreCategoriaRequest $request) //pega requisição
     {
@@ -107,12 +99,8 @@ class CategoriaController extends Controller
      *      @OA\Response(
      *          response=200,
      *          description="Operação executada com sucesso",
-     *      ),
+     *      )
      *  )
-     */
-
-    /**
-     * Display the specified resource.
      */
     public function show($categoriaId)
     {
@@ -208,12 +196,8 @@ class CategoriaController extends Controller
      *      @OA\Response(
      *          response=200,
      *          description="Operação executada com sucesso",
-     *      ),
+     *      )
      *  )
-     */
-
-    /**
-     * Update the specified resource in storage.
      */
     public function update(StoreCategoriaRequest  $request, Categoria $categoria) //recebe o mesmo dado mesma regras pra o update
     {
@@ -247,7 +231,7 @@ class CategoriaController extends Controller
      *          response=200,
      *          description="Operação executada com sucesso",
      *          @OA\jsonContent()
-     *      ),
+     *      )
      *  )
      */
 

@@ -17,17 +17,16 @@ class Categoria
 /**
  *  @OA\Property(
  *      title="ID",
- *      description="ID da Categoria",
+ *      description="ID",
  *      format="int64",
  *      example=1
  *  )
  * 
  * @var integer
  */
-
     private $id;
 
-    /**
+/**
  *  @OA\Property(
  *      title="nome da categoria",
  *      description="Nome da Categoria",
@@ -36,4 +35,5 @@ class Categoria
  * 
  * @var string
  */
+    public $nome_da_categoria;
 }

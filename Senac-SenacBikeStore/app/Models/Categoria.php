@@ -17,7 +17,7 @@ class Categoria extends Model
 
     public $timestamps = false;
     public $incrementing = true;
-    //dattabase firt (criado primeiro)
+    //database firt (criado primeiro)
 
     public function produto() {
         $this->hasMany(Produto::class, 'fkcategoria');

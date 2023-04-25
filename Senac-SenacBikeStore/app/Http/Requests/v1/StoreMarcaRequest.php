@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\v1;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreCategoriaRequest extends FormRequest
+class StoreMarcaRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,7 +22,7 @@ class StoreCategoriaRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "nome_da_categoria" => "required"
+            "nome_da_marca" => "required"
         ];
     }
-}//quando recebr requisição deve-se passar um json com esses dados
+}

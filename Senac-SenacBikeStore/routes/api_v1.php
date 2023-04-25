@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\api\CategoriaController;
-use App\Http\Controllers\api\MarcaController;
-use App\Http\Controllers\api\ProdutoController;
+use App\Http\Controllers\api\v1\CategoriaController;
+use App\Http\Controllers\api\v1\MarcaController;
+use App\Http\Controllers\api\v1\ProdutoController;
 //use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
