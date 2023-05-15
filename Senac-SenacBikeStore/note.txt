@@ -34,3 +34,84 @@ por header http
 pode-se colocar no swagger
 pode-se customizar o deixando mais poderoso
 inclusive servidores/ versões
+---
+muito utilizado no mercado
+muito usado no mercado CRUD OU dml
+ASSOCIADO A MÉTODOS NO LARAVEL
+criar bando (será USADO PARA TODOS OS TRABALHOS)
+BASEADO E commerce
+canvas para organização
+
+php artisan make:resource -> como se fosse uma view da api
+php artisan make:controller Api\CategoriaController --model=Categoria
+cria um controler a partir da tabela automaticamente todas as tabelas são CRUD
+viu métdo pro métod e associou
+request -> faz validação insere recurso
+php artisan make:request StoreCategoriaRequest
+
+versões
+começo meio e fim
+garantir que o softwaRE esteja vivo
+pessoas que garantem que o software tenha um ciclo de vida
+manutenção é essencial para garantir o web service
+criar documentação para o web service + versionamento
+criar um padrão básico de documentação
+padrão bascio para escrever a documentação para ser bem consumida
+versionamento
+se o codigo evolui de acordo com o tempo versionar
+notificar
+pode-se criar quebras se não notificadas as modificações
+mudanças repentinas podem quebrar os sistema
+aplicar versionamento o ideal
+uri -> versões
+ponto critico em querys (tratamento requerido)
+pode-se assumir default (mais nova)
+ideal para mais compactadas muito grandes não é o ideal
+por header http
+pode-se colocar no swagger
+pode-se customizar o deixando mais poderoso
+inclusive servidores/ versões
+
+
+hosting e containers
+docker -> 
+hosting
+evoulução/construção/implementação/construção do software
+containers -> roda o código dentro de um server 'pequeno'
+evoulução do hosing da aplicações
+cmm fases 
+ideai de facilidade de construção de software
+duas areas que trabalham juntas para fazer agilidade
+stack /frameworks/requisitos -> recursos necessarios para a aplicação funcionar
+xerox ->cria o conceito de GUI
+steve jobs cria o conceito de pcs
+depende-se de recursos para o funcionamento da aplicação
+hypervisor -> entidade que pega o hardware e virtualização, criando uma falsa percepção de que o server é unico
+vmware - ibm
+hyper-v - dá ms
+container -> agora tira o SO
+a aplicação roda em uma 'caixa' mais leve consumindo menos recursos (máq virtual super pequena)
+sem necessidade de overhead
+permite instalar em outras maquinas sem precisar instalar tudo, proque ? pq precisa de velocidade.
+empactoar ws + framework => imagem / container 
+para fazer imagem precisa de um 'manifesto' que ensina o docker como criar essa imagem ('receita' de bolo de como montar imagem)
+imagens container são baseadas em linux
+porta interna 9só o container vê
+imagens -> tempalte
+container _. template em execução
+ . vê no diretorio que está o projeto..
+possui o manifesto com as infos, assim dá para rodar em qualquer máquina
+dá para fazer qualquer modificação e manda fazer uma nova imagem
+mais ágil pois se cria uma nova versão da mesma imagem
+com muitas imagens fica dificil de orquestrar (organizar)
+quando mais trabalho mais dificil
+surge o kurbenetes
+quando mais aplicação
+registry -hospeda as imagens
+faz upload para ambiente kurnenetes
+anatomia -
+plaining -codigo que orquestra os nodes (locais de hospedagem de container) (entidade que controla isso)
+maquina virtual (nodes)
+gerenciado de máquinas virtuais
+loadBalancer -vai mandando as reqs para as máquinas disponiveis
+balanceia carga de trabalho
