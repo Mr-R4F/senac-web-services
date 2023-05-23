@@ -115,3 +115,22 @@ maquina virtual (nodes)
 gerenciado de máquinas virtuais
 loadBalancer -vai mandando as reqs para as máquinas disponiveis
 balanceia carga de trabalho
+
+22/05
+cloud compunting 
+hosting
+
+nuvem ncessáio modelo de hosting para 'esticar' a demanda 
+user realamente o que precisaprincipis serviçoes de nuvem
+nist padronizou a caomp e m nuvem
+padronizou na versão de cubo
+para ser considerado um servico de serviceis para
+mias tecnico e mais usuário
+plataforma - >desenvolve - gmail .exe
+infraestrutura - hardware .. -> db na nuvem
+software -> mais perto do usuário -> maq virtual
+modelo de pilha
+onde disponibilizar ?
+comp em nuvem permite criar varios outros serviçoes
+rocura uma área do serve para criar o serve
+actions -> ci /cd
