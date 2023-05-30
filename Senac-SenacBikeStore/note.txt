@@ -134,3 +134,50 @@ onde disponibilizar ?
 comp em nuvem permite criar varios outros serviçoes
 rocura uma área do serve para criar o serve
 actions -> ci /cd
+
+29/05
+indo além
+11 milhoes
+tecnologias se conrecitzam rápido
+aumento de consumindo
+crescimento do disponibilizar salto da covid
+forma liquida
+ideias liquidas
+
+padroes de codigo
+evolução da tecnologia para se adequar ao mundo liquido
+entender o mundo liquido
+devops
+separara de quem desenvolve de quem opera
+evitar problemas
+devops -> capacidade de desenvolver junto a um ciclo
+planeja, produção, feedbacks.
+relação entre as partes
+integração que passam por um processo
+buscar equilibrio entre tecnologia e cultura (conjunto de desisões que se tomam no dia)
+peter ducker -> cultura como estrategia nocafe da manha
+esteira de produção (como uma máquina)
+consrtuir as ferramentas
+necessário processos
+CI -> integra o processo de dev em teste(faz e integra)
+publica e já vincula por exemp
+CD -.faz compila e produção
+entrregou a produção e deploy
+processo de pessoas, ferramntas e processos
+
+microsserviços
+para criar o serviços
+não consegue trabalha com atomicidade de serviçoes
+fragmentar a melhor opção (docker ou semelhante)
+tudo em serviços , há uma separação para caso de algum problema
+maneira de ver o mundo a sistemas distribuidoscom sistemas idependentes e quese comunicam através de APIs
+autonomo ou especializado(especifico em algo)
+serverless _. sem estado
+hospedagem sem configura o server
+preocpa só com o codigo
+ou função ou hospeda em app web
+
+no azure complia faz zip e desfaz
+lambda funcção exportador por web service
+nuvem -> liberar da preocupação de serve
+não tem preocupação.
